@@ -1,20 +1,5 @@
 [
   {
-    "package": "FinDock_BankFeed",
-    "managedRuleSetName": "getPaymentReference",
-    "ruleType": "managedRuleSet"
-  },
-  {
-    "package": "FinDock_BankFeed",
-    "managedRuleSetName": "getInstallmentsByEndToEndId",
-    "ruleType": "managedRuleSet"
-  },
-  {
-    "package": "FinDock_BankFeed",
-    "managedRuleSetName": "getInstallmentsByPaymentReference",
-    "ruleType": "managedRuleSet"
-  },
-  {
     "iconName": "standard:display_text",
     "ruleType": "regexp",
     "name": "Find Installment by Payment Reference (Kenmerk)",
