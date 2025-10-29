@@ -1,27 +1,16 @@
-[
+[  
   {
     "iconName": "standard:display_text",
     "ruleType": "regexp",
-    "name": "Find Installment by Payment Reference (Kenmerk)",
+    "name": "Extract reversal code",
     "inputFieldName": "cpm__Raw_XML_entry__c",
-    "regExp": "Kenmerk:\\s*(\\d+)",
+    "regExp": "reasonCode\"\\s*:\\s*\"([^\"]+)",
     "regExpCapturingGroup": "1",
-    "fieldName": "cpm__Payment_Reference__c",
+    "regExpMultiValue": true,
+    "id": "1kvJfI-55996831",
+    "fieldName": "cpm__Reason_Code__c",
     "fieldType": "string",
     "seqNr": "1",
-    "jobNr": "1"
-  },
-  {
-    "iconName": "standard:display_text",
-    "ruleType": "regexp",
-    "name": "Extract reversal description",
-    "inputFieldName": "cpm__Raw_XML_entry__c",
-    "regExp": "(?<=Reden:\\s*)([^\\r\\n\",]+)",
-    "regExpCapturingGroup": "0",
-    "id": "XhgEJA-55538461",
-    "fieldName": "cpm__Custom_5__c",
-    "fieldType": "string",
-    "seqNr": "2",
     "jobNr": "1"
   },
   {
@@ -31,14 +20,14 @@
     "name": "Set reversal indicator if there is a reversal reason",
     "entryCriteria": [
       {
-        "fieldName": "cpm__Custom_5__c",
+        "fieldName": "cpm__Reason_Code__c",
         "fieldType": "string",
         "comparisonOperator": "notEquals"
       }
     ],
     "fieldName": "cpm__Reversal_Indicator__c",
     "fieldType": "boolean",
-    "seqNr": "3",
+    "seqNr": "2",
     "jobNr": "1"
   }
 ]
