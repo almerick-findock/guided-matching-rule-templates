@@ -16,7 +16,7 @@
     "iconName": "standard:topic2",
     "ruleType": "constant",
     "constant": "true",
-    "name": "Set reversal indicator if there is a reversal reason",
+    "name": "Set reversal indicator if there is a reason code",
     "entryCriteria": [
       {
         "fieldName": "cpm__Reason_Code__c",
