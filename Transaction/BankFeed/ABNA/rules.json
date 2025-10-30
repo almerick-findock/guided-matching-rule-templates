@@ -18,7 +18,6 @@
     "inputFieldName": "cpm__Raw_XML_entry__c",
     "regExp": "(?<=Reden:\\s*)([^\\r\\n\",]+)",
     "regExpCapturingGroup": "0",
-    "id": "XhgEJA-55538461",
     "fieldName": "cpm__Custom_5__c",
     "fieldType": "string",
     "seqNr": "2",
