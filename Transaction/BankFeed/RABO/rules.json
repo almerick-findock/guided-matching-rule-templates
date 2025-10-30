@@ -7,7 +7,6 @@
     "regExp": "reasonCode\"\\s*:\\s*\"([^\"]+)",
     "regExpCapturingGroup": "1",
     "regExpMultiValue": true,
-    "id": "1kvJfI-55996831",
     "fieldName": "cpm__Reason_Code__c",
     "fieldType": "string",
     "seqNr": "1",
